@@ -1,0 +1,9 @@
+{{events.actor.login}}
+
+<div ng-repeat="event in events">
+	<ul><strong>{{event.type}}</strong> - <a ng-href="{{evenet.repo.url}}">{{event.repo.name}}</a>
+		<li ng-repeat="commit in event.payload.commits">
+			Commit: {{commit.message}}
+		</li>
+	</ul>
+</div>
